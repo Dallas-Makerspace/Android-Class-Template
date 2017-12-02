@@ -3,22 +3,73 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, shrink-to-fit=no">
 
     <!-- Material Design for Bootstrap fonts and icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript -->
+    
+    <!-- Required JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js" integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe" crossorigin="anonymous"></script>
-    <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    
+    <script src="/scripts/bundle.js"></script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <!-- PWA Extentions -->
+    <script async src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v1.0.3/pwacompat.min.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <meta name='mobile-web-app-capable' content='yes'>
+    <link rel="icon" sizes="192x192" href="https://talk.dallasmakerspace.org/user_avatar/talk.dallasmakerspace.org/denzuko/192/3082_1.png" type="image/png">
+    <meta name="theme-color" content="#334457" />
+    <meta name="background-color" content="#334457" />
+    
+    <!-- Optional Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="/styles/bundle.css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-dark">
+       <a class="navbar-brand" href="#">Navbar</a>
+       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+         <ul class="navbar-nav mr-auto">
+           <li class="nav-item active"><a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a></li>
+           <li class="nav-item"><a class="nav-link waves-effect waves-light" href="#">Features</a></li>
+           <li class="nav-item"><a class="nav-link waves-effect waves-light" href="#">Pricing</a></li>
+           <li class="nav-item btn-group">
+             <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown 
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+               <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+               <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+             </div>
+           </li>
+         </ul>
+         <form class="form-inline waves-effect waves-light">
+           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+         </form>
+      </div>
+    </nav>
+    <main>
+      <h1>Hello, world!</h1>
+    </main>
+    <footer class="page-footer center-on-small-only">
+    </footer>
+    <noscript>
+      <img src="http://www.lifelearn.com/wp-content/uploads/2015/07/oops..jpg" alt="Can I haz oops?!"/>
+      <h1>You don’t have javascript enabled.</h1>
+      <p>Please enable it to get the full experience.</p>
+    </noscript>
   </body>
 </html>
