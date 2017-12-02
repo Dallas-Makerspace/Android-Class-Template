@@ -7,8 +7,8 @@ self.addEventListener("install", function(event) {
         return cache.addAll([
           '/',
           '/manifest.json',
-          '/style.css',
-          '/bundle.js'
+          '/styles/bundle.css',
+          '/scripts/bundle.js'
         ].map(function(uri){ return location.origin + uri }));
       })
       .then(function() {
